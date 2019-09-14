@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {RouteGuard} from "./routeguard.service"
-
 import {AppComponent} from "./app.component"
 import {CartComponent} from "./cart/cart.component"
 import {LoginComponent} from "./login/login.component"
@@ -14,7 +13,7 @@ const routes: Routes = [
   },
   {
      path:'cart',
-     component:CartComponent,
+     loadChildren:'./cart/cart.module#CartModule',
      canActivate:[RouteGuard]
   },
   {

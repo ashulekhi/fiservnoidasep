@@ -22,7 +22,7 @@ import {RouteGuard} from "./routeguard.service"
 
 @NgModule({
   declarations: [
-    AppComponent, HighlightDirective ,DiscountPipe, SignupComponent, NavbarComponent, ProductComponent, CarouselComponent, UsermodalComponent, LoginComponent, CartComponent, ProductdetailComponent, MainComponent
+    AppComponent, HighlightDirective ,DiscountPipe, SignupComponent, NavbarComponent, ProductComponent, CarouselComponent, UsermodalComponent, LoginComponent, ProductdetailComponent, MainComponent
   ],
   imports: [
     BrowserModule,
