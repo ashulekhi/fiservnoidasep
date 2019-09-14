@@ -1,0 +1,20 @@
+<div id="usermodal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <app-signup *ngIf="toggleView"></app-signup>
+          <app-login *ngIf="!toggleView"></app-login>
+        </div>
+        <div class="modal-footer">
+          <a  (click)="changeView()"*ngIf="toggleView">Already a User? Login Here</a>
+          <a  (click)="changeView()"*ngIf="!toggleView">New User? Click here to Register</a>          
+        </div>
+      </div>
+    </div>
+  </div>

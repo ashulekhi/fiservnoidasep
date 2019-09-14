@@ -1,0 +1,12 @@
+
+<div *ngIf="showError" class="alert alert-danger">Some Error Occured</div>
+<input class="form-control" [(ngModel)]="user.email"  type="text" placeholder="Email">
+<input class="form-control" [(ngModel)]="user.name" type="text" placeholder="Name">
+<input class="form-control" [(ngModel)]="user.password" type="password" placeholder="Password">
+<button class="btn btn-primary" (click)="register()">Register</button>
+
+NO Of users {{loggedinusers}}
+
+
+
+
